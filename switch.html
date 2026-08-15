@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title>Estruturas de Condição</title>
+
+        <script>
+
+            const salario = prompt('Digite o salário: ');           
+
+            const cargo = prompt('Digite o cargo: ');
+
+            let aumento = 0;
+
+            switch(cargo){
+                case 'Estagiário':
+                    aumento = 100/100;
+                    break;
+                case 'Analista':
+                    aumento = 50/100;
+                    break;
+                case 'Gerente':
+                    aumento = 30/100;
+                    break;
+                case 'Presidente':
+                    aumento = 10/100;
+                    break;
+                default:
+                    alert('Favor escolher um cargo válido.');
+            }
+
+            const novoSalario = salario * (1 + aumento);
+            console.log("O novo salário é: " + novoSalario);
+
+        </script>
+
+    </head>
+    <body>
+
+
+
+    </body>
+</html>
