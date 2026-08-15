@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <title>Estruturas de Condição</title>
+
+        <script>
+
+            const n1 = prompt("Digite a nota 1. ");
+            const n2 = prompt("Digite a nota 2. ");
+            const n3 = prompt("Digite a nota 3. ");
+            const n4 = prompt("Digite a nota 4. ");
+
+            const soma = Number(n1) + Number(n2) + Number(n3) + Number(n4);
+            const media = soma / 4;
+
+            if (media >= 7) {
+                console.log("A média é: " + media);
+                console.log("Aprovado!");
+            }
+            else if(media >= 5){
+                console.log("A média é: " + media);
+                console.log("Recuperação.");
+            }
+            else{
+                console.log("A média é: " + media);
+                console.log("Reprovado :(");
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+
+
+    </body>
+</html>
