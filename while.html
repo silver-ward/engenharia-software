@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <title>Estruturas de Condição</title>
+        <meta charset="UTF-8">
+
+        <script>
+
+            let contador = 1;
+            const quantidade = prompt('Quantas notas?');
+            let soma = 0;
+            let nota = 0;
+
+
+            while(contador <= quantidade){
+                
+                nota = Number(prompt('Digite a nota ' + contador + ': '));
+                soma = soma + nota;
+                contador++;
+            }
+
+            console.log('Soma: ' + soma);
+            console.log('Nota: ' + nota);
+            console.log('Média: ' + (soma / quantidade));
+
+            const resultado = media >=7 ? 'Aprovado' : 'Reprovado';
+            console.log('Resultado: ' + resultado);
+
+        </script>
+
+    </head>
+    <body>
+
+
+
+    </body>
+</html>
