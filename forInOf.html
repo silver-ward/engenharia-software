@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>Estruturas de Condição</title>
+
+        <script>
+
+            const nome = 'Orion';
+            const nota = 1;
+
+            const pessoa = {
+                nome: 'Orion',
+                telefone: '(61) 98765-4321',
+                endereco: 'ABC'
+            }
+
+            for (let atributo in pessoa){
+                console.log(atributo);
+            }
+
+            for (let atributo in pessoa){
+                console.log(atributo + ': ' + pessoa[atributo]);
+            }
+
+            const carros = ['Gol', 'Fusca', 'Virtus', 'Ka'];
+
+            for(let elemento of carros){
+                console.log(elemento);
+            }
+            
+        </script>
+
+    </head>
+    <body>
+
+
+
+    </body>
+</html>
