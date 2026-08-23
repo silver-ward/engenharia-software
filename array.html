@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+
+        <script>
+            const carros = ['Gol', 'Fusca', 'Virtus', 'Ka'];
+
+            console.log('Table: ')
+            console.table(carros);
+
+            console.log('\nÍndice 3: ');
+            console.log(carros[3]);
+
+            console.log('\nFor of: ');
+            for(let carro of carros){
+                console.log(carro);
+            }
+            console.log('\nFor: ');
+            for(let i = 0; i < carros.length; i++){
+                console.log(carros[i]);
+            }
+
+            carros.push('Fiesta');
+            console.table(carros);
+
+            carros.unshift('Palio');
+            console.table(carros);
+
+            const shiftedCarro = carros.shift();
+            console.log('Shifted carro: ' + shiftedCarro);
+            console.table(carros);
+
+            const poppedCarro = carros.pop();
+            console.log('Popped carro: ' + poppedCarro);
+            console.table(carros);
+
+            console.log("Splice: a partir do index 1, excluir 0 itens e adicionar 'Uno'.");
+            carros.splice(1,0, 'Uno');
+            console.table(carros);
+
+            console.log('Splice: A partir do index 1, excluir 1 item.');
+            carros.splice(1,1);
+            console.table(carros);
+
+            console.log('Sort: ');
+            carros.sort();
+            console.table(carros);
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
