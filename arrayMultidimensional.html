@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="UTF-8">
+
+        <script>
+            const nomes = [
+                'Orion',
+                'Maria',
+                'José',
+                'Antônio'
+            ];
+
+            const notas = [
+                [5, 10, 9, 4],
+                [6, 7, 2, 10],
+                [8, 6, 3, 10]
+            ];
+
+            console.table(notas[1][2]);
+
+            const pessoa = {nome: "Orion Teles", telefone: "(61) 987654321", endereco: 'ABC'};
+
+            const pessoas = [
+                {nome: "Orion Teles", telefone: "(61) 98765-4321", endereco: 'ABC'},
+                {nome: "Elizabete", telefone: "(61) 98765-7777", endereco: 'DEF'},
+                {nome: "Sofia", telefone: "(61) 98765-2222", endereco: 'GHI'},
+                {nome: "Eduardo", telefone: "(61) 98765-3333", endereco: 'JKL'}
+            ];
+
+            console.table(pessoas);
+            console.table(pessoas[2].nome);
+            console.table(pessoas[2]['nome']);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
