@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bootstrap</h1>
+
+        <h2>Botões</h2>
+        <input class="btn btn-success" type="button" value="Salvar">
+        <button class="btn btn-danger">Cancelar</button>
+
+        <h2>Accordion</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Alertas</h2>
+        <div class="alert alert-success">
+            Redação adicionada com sucesso!
+            <a href="#" class="alert-link">Clique aqui</a> para voltar.
+        </div>
+        <div class="alert alert-warning">
+            Operação cancelada.
+            <a href="#" class="alert-link">Clique aqui</a> para voltar.
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>My pearls!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+
+        <h2>Cartões</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="./img/produto-1.webp" class="card-img-top" alt="Produto 1">
+            <div class="card-body">
+                <h5 class="card-title">Celular Samsung</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s
+                    content.</p>
+                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+            </div>
+        </div>
+
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header text-bg-danger">Header</div>
+            <div class="card-body text-danger">
+                <h5 class="card-title">Danger card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+            </div>
+        </div>
+
+        <h2>Tabelas</h2>
+
+        <!--Emmet Abbreviation: table>thead>tr>th*3 -->
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Eduardo</td>
+                    <td>61 999-999</td>
+                    <td>Brasília</td>
+                </tr>
+                                <tr>
+                    <td>Marcos</td>
+                    <td>61 999-999</td>
+                    <td>Brasília</td>
+                </tr>
+                                <tr>
+                    <td>Larissa</td>
+                    <td>61 999-999</td>
+                    <td>Brasília</td>
+                </tr>
+                                <tr>
+                    <td>Lauro</td>
+                    <td>61 999-999</td>
+                    <td>Brasília</td>
+                </tr>
+                                <tr>
+                    <td>Greyce</td>
+                    <td>61 999-999</td>
+                    <td>Brasília</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </div>
+</body>
+
+</html>
