@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    border: #555555  1px;
+    background-color: #555555;
+    color: white;
+    margin: 30px 0px 15px 0px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cifrao{
+    color: #88cc88;
+}
+
+footer{
+    background-color: #555555;
+    color:white;
+    padding: 5px;
+}
+
+.produto-item{
+    color: #999999;
+}
