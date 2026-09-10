@@ -12,9 +12,15 @@ h1{
     font-weight: bold;
 }
 
-#cifrao{
-    color: #88cc88;
+.cifrao{
+    color: #77cc77;
 }
+
+.qtd{
+    display: inline-block;
+    min-width: 1em;
+    text-align: center;
+    }
 
 footer{
     background-color: #555555;

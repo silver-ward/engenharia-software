@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="./js/funcoes.js"></script>
 </head>
 
 <body>
@@ -19,8 +22,8 @@
                     <th>Imagem</th>
                     <th>Produto</th>
                     <th>Preço Unitário</th>
-                    <th>Qtd</th>
-                    <th>Total</th>
+                    <th width="100em">Qtd</th>
+                    <th width="100em">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,18 +36,21 @@
                         <div><span class="produto-item">Código:</span> 123456</div>
                         <div><span class="produto-item">Cor:</span> Preto</div>
                     </td>
-                    <td>1000</td>
+                    <td id="valor-1">1000</td>
                     <td>
-                        <span class="badge text-bg-danger">
+                        <span class="badge text-bg-danger" onclick="alterarQtd(1, '-')">
                             <i class="bi bi-dash"></i>
                         </span>
-                        0
-                        <span class="badge text-bg-success">
+                        <span id="qtd-1" class="qtd">
+                            0
+                        </span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(1, '+')">
                             <i class="bi bi-plus"></i>
                         </span>
                     </td>
-                    <td><i id="cifrao" class="bi bi-currency-dollar"></i>
-                        0
+                    <td>
+                        <span class="cifrao">R$</span>
+                        <span id="total-1">0</span>
                     </td>
                 </tr>
                 <tr>
@@ -56,18 +62,21 @@
                         <div><span class="produto-item">Código:</span> 234567</div>
                         <div><span class="produto-item">Cor:</span> Preto</div>
                     </td>
-                    <td>3000</td>
+                    <td id="valor-2">3000</td>
                     <td>
-                        <span class="badge text-bg-danger">
+                        <span class="badge text-bg-danger" onclick="alterarQtd(2, '-')">
                             <i class="bi bi-dash"></i>
                         </span>
-                        0
-                        <span class="badge text-bg-success">
+                        <span id="qtd-2" class="qtd">
+                            0
+                        </span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(2, '+')">
                             <i class="bi bi-plus"></i>
                         </span>
                     </td>
-                    <td><i id="cifrao" class="bi bi-currency-dollar"></i>
-                        0
+                    <td>
+                        <span class="cifrao">R$</span>
+                        <span id="total-2">0</span>
                     </td>
                 </tr>
                 <tr>
@@ -79,28 +88,31 @@
                         <div><span class="produto-item">Código:</span> 345678</div>
                         <div><span class="produto-item">Cor:</span> Preto</div>
                     </td>
-                    <td>3000</td>
+                    <td id="valor-3">3000</td>
                     <td>
-                        <span class="badge text-bg-danger">
+                        <span class="badge text-bg-danger" onclick="alterarQtd(3, '-')">
                             <i class="bi bi-dash"></i>
                         </span>
-                        0
-                        <span class="badge text-bg-success">
+                        <span id="qtd-3" class="qtd">
+                            0
+                        </span>
+                        <span class="badge text-bg-success" onclick="alterarQtd(3, '+')">
                             <i class="bi bi-plus"></i>
                         </span>
                     </td>
-                    <td><i id="cifrao" class="bi bi-currency-dollar"></i>
-                        0
+                    <td>
+                        <span class="cifrao">R$</span>
+                        <span id="total-3">0</span>
                     </td>
                 </tr>
             </tbody>
         </table>
 
         <footer class="text-center">
-            <span>
-                <i class="bi bi-cart-check"></i>
-                Subtotal: R$ 0
-            </span>
+            <i class="bi bi-cart-check"></i>
+            Subtotal: 
+            <span class="cifrao">R$</span>
+            <span id="subtotal">0</span>
         </footer>
 
     </div>
